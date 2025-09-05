@@ -7,15 +7,25 @@ This solution uses the A* search algorithm to determine the best solution for th
 
 ## Assumptions
 •	The goal is achieved when all treasures are collected regardless of where the final node is
+
 •	The cost of moving to any adjacent cell will always be the same unless affected by a trap or reward
+
 •	The cost of moving to an adjacent cell will be 1 initially
+
 •	The traps and rewards’ effect are activated immediately after stepping on it
+
 •	Each trap or reward can only be activated once
+
 •	Trap 3 will teleport the player 2 cells back along the path they took to get to the trap
+
 •	Trap 3’s teleport effect will not incur any cost to the player
+
 •	Trap 4 will always end in a game over state if there are still uncollected treasures
+
 •	Trap 1, trap 2, reward 1, and reward 2’s effect cannot stack with the trap or reward of the same type
+
 •	The effect of trap 1, trap 2, reward 1, and reward 2 can stack with each other 
+
 •	Trap 1 and trap 2’s effect will have the same effect on cost in the code as they are fundamentally similar, this will be the same for reward 1 and reward 2
 
 ## Heuristic function
